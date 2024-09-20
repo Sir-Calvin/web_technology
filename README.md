@@ -1,0 +1,1 @@
+Hier ist die Readme Datei in der wir wichtige Informationen zum Projekt reinschreiben sollten
