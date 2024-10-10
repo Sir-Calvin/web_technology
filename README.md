@@ -4,4 +4,8 @@ Zum Beispiel eine Übersicht über die Branches
 
 ersteapp: ist die App in der wir den größten Teil machen werden. Darin sind unter templates/ersteapp/ die HTML Dateien
                                                                             unter static/ sind die css, js und jpg dateien
-Ich versuche gerade was
+Treffen 10.10.2024 
+-Robin fängt an bei Overleaf die Grundstruktur vorzubereiten
+-Tim liest sich in die Funktionsweise von Django ein
+-Alex erstellt eine main.html und sorgt dafür dass der Server dauerhaft zu erreichen ist
+-Melis betreibt Quellensuche
