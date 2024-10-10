@@ -4,3 +4,4 @@ Zum Beispiel eine Übersicht über die Branches
 
 ersteapp: ist die App in der wir den größten Teil machen werden. Darin sind unter templates/ersteapp/ die HTML Dateien
                                                                             unter static/ sind die css, js und jpg dateien
+Ich versuche gerade was
