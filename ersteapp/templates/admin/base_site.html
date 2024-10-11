@@ -1,0 +1,32 @@
+{% extends "admin/base_site.html" %}
+{% block title %}Band Buchungsverwaltung | {{ block.super }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Band Buchungsverwaltung</a></h1>
+{% endblock %}
+
+{% block nav-global %}
+<nav class="custom-nav">
+    <ul>
+        <li><a href="{% url 'admin:index' %}"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="{% url 'admin:auth_user_changelist' %}"><i class="fas fa-users"></i> Benutzer</a></li>
+        <li><a href="{% url 'admin:auth_group_changelist' %}"><i class="fas fa-user-friends"></i> Gruppen</a></li>
+        <li><a href="{% url 'admin:ersteapp_booking_changelist' %}"><i class="fas fa-calendar-alt"></i> Buchungen</a></li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block extrastyle %}
+<link rel="stylesheet" type="text/css" href="{% static 'admin/css/custom.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+{% endblock %}
+
+{% block extrahead %}
+<script src="{% static 'admin/js/custom.js' %}"></script>
+{% endblock %}
+
+{% block footer %}
+<footer id="footer" class="custom-footer">
+    <p>&copy; 2023 Band Buchungsverwaltung. Alle Rechte vorbehalten.</p>
+</footer>
+{% endblock %}

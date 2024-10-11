@@ -1,16 +1,32 @@
-<!-- templates/base.html -->
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Band Buchungsseite</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <header>
-        <h1>Band Buchungsseite</h1>
-    </header>
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
+    <nav>
+        <ul>
+            <li><a href="{% url 'landing_page' %}">Startseite</a></li>
+            <li><a href="{% url 'calendar' %}">Kalender</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Registrieren</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    <div>
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% block content %}{% endblock %}
+    </div>
 </body>
 </html>
