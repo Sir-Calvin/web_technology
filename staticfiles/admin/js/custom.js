@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Custom JavaScript loaded');
-    // Fügen Sie hier Ihre benutzerdefinierten JavaScript-Funktionen hinzu
+    const themeToggleButton = document.querySelector('.theme-toggle');
+    const body = document.body;
+
+    themeToggleButton.addEventListener('click', function() {
+        if (body.classList.contains('dark-mode')) {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+        } else {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+        }
+    });
 });
