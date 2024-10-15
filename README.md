@@ -22,3 +22,9 @@ Hier ist die Readme-Datei, in der wir wichtige Informationen zum Projekt festhal
 ## Superuser
 
 Erstellt mit leerem Benutzernamen und Passwort: `password`
+
+## Treffen am 15.10.2024
+
+- **Robin + Melis**: Sprechen sich ab wie sie vorgehen wenn Tim und ich mal was geschissen bekommen haben
+- **Tim**: Versucht Kalendertemplate einzubinden in neuem Branch
+- **Alex**: HTML Template erstellen klickfunktion auf Kalender und ich muss bisherigen Stand dokumentieren
