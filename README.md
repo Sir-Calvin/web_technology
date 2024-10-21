@@ -28,3 +28,7 @@ Erstellt mit leerem Benutzernamen und Passwort: `password`
 - **Robin + Melis**: Sprechen sich ab wie sie vorgehen wenn Tim und ich mal was geschissen bekommen haben
 - **Tim**: Versucht Kalendertemplate einzubinden in neuem Branch
 - **Alex**: HTML Template erstellen klickfunktion auf Kalender und ich muss bisherigen Stand dokumentieren
+
+## Pull Request landepage 22.10.
+
+Die Landepage ist erstellt, Login und Register funktionieren auch erstmal. Jetzt ist als nächster Schritt die verschiedenen Funktionen auf einer HTML zu vereinen
