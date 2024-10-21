@@ -1,10 +1,18 @@
 {% extends 'base.html' %}
+{% block title %}Kalender{% endblock %}
 {% block content %}
 <h2>Kalender</h2>
+<div id="calendar"></div>
 <ul>
     {% for booking in bookings %}
     <li>{{ booking.date }} {{ booking.time }} - {{ booking.details }}</li>
     {% endfor %}
 </ul>
 <a href="{% url 'create_booking' %}">Neue Buchung erstellen</a>
+{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'ersteapp/css/calendar.css' %}">
+{% endblock %}
+{% block extra_js %}
+<script src="{% static 'ersteapp/js/calendar.js' %}"></script>
 {% endblock %}

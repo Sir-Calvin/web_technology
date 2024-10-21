@@ -1,86 +1,77 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="de-DE">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Buchen Sie Lizi Gozalishvili, Sängerin und Songwriterin, für Ihre Hochzeit, Ihr Firmenevent oder eine andere Veranstaltung.">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta property="og:locale" content="de_DE">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Buchen Sie Lizi Gozalishvili für Ihr Event">
-    <meta property="og:description" content="Live-Musik von Lizi Gozalishvili, bekannt aus The Voice of Germany. Verleihen Sie Ihrer Veranstaltung eine besondere Note mit ihrer Stimme.">
-    <meta property="og:image" content="{% static 'images/lizi-event.png' %}">
-    <meta property="og:url" content="https://lizimusic.com/buchen">
-    <title>Lizi Gozalishvili für Ihr Event buchen</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-</head>
-<body>
-    <header>
-        <div class="language-switcher">
-            <a href="https://lizimusic.com/?lang=de"><img src="{% static 'images/de.png' %}" alt="Deutsch"></a>
-            <a href="https://lizimusic.com/?lang=en"><img src="{% static 'images/en.png' %}" alt="English"></a>
+{% extends 'base.html' %}
+
+{% block title %}Startseite{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'ersteapp/css/calendar.css' %}">
+{% endblock %}
+
+{% block content %}
+<header>
+    <div class="language-switcher">
+        <a href="https://lizimusic.com/?lang=de"><img src="{% static 'images/de.png' %}" alt="Deutsch"></a>
+        <a href="https://lizimusic.com/?lang=en"><img src="{% static 'images/en.png' %}" alt="English"></a>
+    </div>
+    <h1>Buchen Sie Lizi Gozalishvili</h1>
+    <p>Die Stimme, die Ihre Veranstaltung unvergesslich macht</p>
+</header>
+
+<main>
+    <section class="about-lizi">
+        <img src="{% static 'images/lizi-reflective.png' %}" alt="Lizi Gozalishvili in reflektierender Pose">
+        <h2>Hey! Ich bin Lizi.</h2>
+        <p>
+            Geboren und aufgewachsen in Tiflis, der Hauptstadt von Georgien, wusste ich schon immer, dass Musik mein Leben bestimmen würde. 
+            Mit 14 begann ich, eigene Songs zu schreiben, und seitdem habe ich meine Leidenschaft zu meinem Beruf gemacht.
+        </p>
+        <p>
+            Heute bin ich als Solokünstlerin und mit meiner Band "Lizi & the Friendz" in ganz Deutschland unterwegs. Seit meiner Teilnahme an "The Voice of Germany" habe ich die Möglichkeit, meine Musik einem größeren Publikum zu präsentieren.
+        </p>
+    </section>
+
+    <section class="bookings">
+        <h2>Buchen Sie mich für Ihre Veranstaltung</h2>
+        <p>Ob Hochzeit, Firmenevent oder private Feier – ich freue mich, Ihre Veranstaltung musikalisch zu begleiten und für besondere Momente zu sorgen.</p>
+        <p>
+            <strong>Lizi & the Friendz</strong> – Die perfekte Coverband für Dinner, Hochzeiten und Tanz. Unser Repertoire reicht von Klassikern bis zu modernen Hits, um für jede Stimmung die passende Musik zu liefern.
+        </p>
+        <p>Interessiert? Kontaktieren Sie uns unter <a href="mailto:lizi@lizimusic.com">lizi@lizimusic.com</a> und lassen Sie uns Ihre Wünsche besprechen!</p>
+    </section>
+
+    <section class="press-reviews">
+        <h2>Pressestimmen</h2>
+        <ul>
+            <li><a href="https://www.sat1.de/serien/the-voice-of-germany/kandidaten/lizi-gozalishvili-316464">Sat1: "Lizi Gozalishvili - Eine Stimme, die begeistert!"</a></li>
+            <li><a href="https://www.bild.de/unterhaltung/leute/leute/the-voice-of-germany-lizi-kannte-von-deutschland-zuerst-den-fc-bayern-86039300.bild.html">Bild: "Von Deutschland kannte ich zuerst den FC Bayern"</a></li>
+            <li><a href="https://www.sat1.de/serien/the-voice-of-germany/videos/the-voice-2023-tolle-energie-lizi-gozalishvili-singt-kelly-clarksons-since-u-been-gone-v_10k7tvxukijy">Sat1: "Lizi Gozalishvili singt Kelly Clarksons 'Since U Been Gone'"</a></li>
+        </ul>
+    </section>
+
+    <section class="the-voice">
+        <h2>The Voice of Germany</h2>
+        <p>„Mit der Stimme wirst du nicht viel Zeit zum Studieren haben“ – Giovanni Zarrella</p>
+        <div class="the-voice-videos">
+            <h3>Blind Audition</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7UwD3zvj4oE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            
+            <h3>Battles</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JRzT1_fyp9s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-        <h1>Buchen Sie Lizi Gozalishvili</h1>
-        <p>Die Stimme, die Ihre Veranstaltung unvergesslich macht</p>
-    </header>
-    
-    <main>
-        <section class="about-lizi">
-            <img src="{% static 'images/lizi-reflective.png' %}" alt="Lizi Gozalishvili in reflektierender Pose">
-            <h2>Hey! Ich bin Lizi.</h2>
-            <p>
-                Geboren und aufgewachsen in Tiflis, der Hauptstadt von Georgien, wusste ich schon immer, dass Musik mein Leben bestimmen würde. 
-                Mit 14 begann ich, eigene Songs zu schreiben, und seitdem habe ich meine Leidenschaft zu meinem Beruf gemacht.
-            </p>
-            <p>
-                Heute bin ich als Solokünstlerin und mit meiner Band "Lizi & the Friendz" in ganz Deutschland unterwegs. Seit meiner Teilnahme an "The Voice of Germany" habe ich die Möglichkeit, meine Musik einem größeren Publikum zu präsentieren.
-            </p>
-        </section>
+    </section>
 
-        <section class="bookings">
-            <h2>Buchen Sie mich für Ihre Veranstaltung</h2>
-            <p>Ob Hochzeit, Firmenevent oder private Feier – ich freue mich, Ihre Veranstaltung musikalisch zu begleiten und für besondere Momente zu sorgen.</p>
-            <p>
-                <strong>Lizi & the Friendz</strong> – Die perfekte Coverband für Dinner, Hochzeiten und Tanz. Unser Repertoire reicht von Klassikern bis zu modernen Hits, um für jede Stimmung die passende Musik zu liefern.
-            </p>
-            <p>Interessiert? Kontaktieren Sie uns unter <a href="mailto:lizi@lizimusic.com">lizi@lizimusic.com</a> und lassen Sie uns Ihre Wünsche besprechen!</p>
-        </section>
+    <section class="about-georgia">
+        <h2>Lizi Gozalishvili in Georgien</h2>
+        <p>
+            Meine georgische Heimat spielt eine große Rolle in meiner Musik. Als Teilnehmerin bei "The Voice Georgia" habe ich es bis ins Halbfinale geschafft und mich dadurch als Künstlerin weiterentwickelt. 
+            Auch in der georgischen Musiksendung "Akustika" habe ich meine Songs präsentiert, unter anderem gemeinsam mit dem Tbilisi Girls' Choir.
+        </p>
+    </section>
+</main>
 
-        <section class="press-reviews">
-            <h2>Pressestimmen</h2>
-            <ul>
-                <li><a href="https://www.sat1.de/serien/the-voice-of-germany/kandidaten/lizi-gozalishvili-316464">Sat1: "Lizi Gozalishvili - Eine Stimme, die begeistert!"</a></li>
-                <li><a href="https://www.bild.de/unterhaltung/leute/leute/the-voice-of-germany-lizi-kannte-von-deutschland-zuerst-den-fc-bayern-86039300.bild.html">Bild: "Von Deutschland kannte ich zuerst den FC Bayern"</a></li>
-                <li><a href="https://www.sat1.de/serien/the-voice-of-germany/videos/the-voice-2023-tolle-energie-lizi-gozalishvili-singt-kelly-clarksons-since-u-been-gone-v_10k7tvxukijy">Sat1: "Lizi Gozalishvili singt Kelly Clarksons 'Since U Been Gone'"</a></li>
-            </ul>
-        </section>
-
-        <section class="the-voice">
-            <h2>The Voice of Germany</h2>
-            <p>„Mit der Stimme wirst du nicht viel Zeit zum Studieren haben“ – Giovanni Zarrella</p>
-            <div class="the-voice-videos">
-                <h3>Blind Audition</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7UwD3zvj4oE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                
-                <h3>Battles</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JRzT1_fyp9s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-        </section>
-
-        <section class="about-georgia">
-            <h2>Lizi Gozalishvili in Georgien</h2>
-            <p>
-                Meine georgische Heimat spielt eine große Rolle in meiner Musik. Als Teilnehmerin bei "The Voice Georgia" habe ich es bis ins Halbfinale geschafft und mich dadurch als Künstlerin weiterentwickelt. 
-                Auch in der georgischen Musiksendung "Akustika" habe ich meine Songs präsentiert, unter anderem gemeinsam mit dem Tbilisi Girls' Choir.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Lizi Gozalishvili. <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutzerklärung</a></p>
-    </footer>
-
-    <script src="{% static 'js/scripts.js' %}"></script>
-</body>
-</html>
+<footer>
+    <p>&copy; 2024 Lizi Gozalishvili. <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutzerklärung</a></p>
+</footer>
+{% endblock %}
+{% block extra_js %}
+<script src="{% static 'ersteapp/js/scripts.js' %}"></script>
+{% endblock %}
