@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Kalender</h2>
+<ul>
+    {% for booking in bookings %}
+    <li>{{ booking.date }} {{ booking.time }} - {{ booking.details }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'create_booking' %}">Neue Buchung erstellen</a>
+{% endblock %}
