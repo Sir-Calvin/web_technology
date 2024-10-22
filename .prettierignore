@@ -1,0 +1,24 @@
+# Ignoriere das venv-Verzeichnis
+venv
+
+# Ignoriere Django-Templates
+**/templates/**/*.html
+**/templates/**/*.htm
+**/templates/**/*.txt
+
+# Ignoriere Django-Admin-Templates
+**/admin/templates/**/*.html
+**/admin/templates/**/*.htm
+**/admin/templates/**/*.txt
+
+# Ignoriere statische Dateien
+**/static/**/*.css
+**/static/**/*.js
+**/static/**/*.html
+
+# Ignoriere Migrations
+**/migrations/**/*.py
+
+# Ignoriere andere spezifische Dateien oder Verzeichnisse
+**/media/**
+**/staticfiles/**
