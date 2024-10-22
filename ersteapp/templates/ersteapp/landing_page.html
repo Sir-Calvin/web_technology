@@ -17,6 +17,13 @@
 </header>
 
 <main>
+    <!-- Kalenderbereich -->
+    <section>
+        <h2>Termine</h2>
+        <div id="calendar"></div> <!-- Kalendercontainer -->
+    </section>
+
+    <!-- Andere Sektionen -->
     <section class="about-lizi">
         <img src="{% static 'images/lizi-reflective.png' %}" alt="Lizi Gozalishvili in reflektierender Pose">
         <h2>Hey! Ich bin Lizi.</h2>
@@ -68,8 +75,9 @@
     </section>
 </main>
 
-
 {% endblock %}
+
 {% block extra_js %}
-<script src="{% static 'ersteapp/js/scripts.js' %}"></script>
+<script src="{% static 'ersteapp/js/moment.min.js' %}"></script> <!-- Moment.js einbinden -->
+<script src="{% static 'ersteapp/js/calendar.js' %}"></script> <!-- Kalenderlogik einbinden -->
 {% endblock %}
