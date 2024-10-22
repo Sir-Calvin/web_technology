@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}Startseite{% endblock %}
 
 {% block extra_css %}
@@ -68,9 +68,7 @@
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2024 Lizi Gozalishvili. <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutzerklärung</a></p>
-</footer>
+
 {% endblock %}
 {% block extra_js %}
 <script src="{% static 'ersteapp/js/scripts.js' %}"></script>
