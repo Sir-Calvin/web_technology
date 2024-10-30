@@ -39,7 +39,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ersteapp',
+    'schedule',
+    'djangobower',
 ]
+
+TEMPLATE_CONTECT_PROCESSORS = ["django.template.context_processors.request"]
+STATICFILES_FINDERS = ['djangobower.finders.BowerFinder']
+BOWER_COMPONENTS_ROOT = ['/DasProjekt/components/']
+BOWER_INSTALLED_APPS = (
+    'jquery',
+    'jquery-ui',
+    'bootstrap'
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
