@@ -40,13 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ersteapp',
     'schedule',
-    'djangobower'
+    'djangobower',
 ]
 
 TEMPLATE_CONTECT_PROCESSORS = ["django.template.context_processors.request"]
 STATICFILES_FINDERS = ['djangobower.finders.BowerFinder']
 BOWER_COMPONENTS_ROOT = ['/DasProjekt/components/']
-
 BOWER_INSTALLED_APPS = (
     'jquery',
     'jquery-ui',
@@ -119,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC+2'
 
 USE_I18N = True
 
@@ -129,7 +128,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/Projekt/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

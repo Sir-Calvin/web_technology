@@ -5,7 +5,7 @@ Hier ist die Readme-Datei, in der wir wichtige Informationen zum Projekt festhal
 ## Branches
 
 - **Test**: Zum Testen und Ausprobieren der Funktionen (Git etc.)
-- **ersteapp**: Hier wird der größte Teil der Arbeit stattfinden. 
+- **ersteapp**: Hier wird der größte Teil der Arbeit stattfinden.
 
 ## Verzeichnisstruktur
 
