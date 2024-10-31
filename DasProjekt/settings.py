@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 
 TEMPLATE_CONTECT_PROCESSORS = ["django.template.context_processors.request"]
 STATICFILES_FINDERS = ['djangobower.finders.BowerFinder']
-BOWER_COMPONENTS_ROOT = ['/DasProjekt/components/']
+BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')
 BOWER_INSTALLED_APPS = (
     'jquery',
     'jquery-ui',
@@ -118,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC+2'
+TIME_ZONE = 'Europe/Berlin'
 
 USE_I18N = True
 
