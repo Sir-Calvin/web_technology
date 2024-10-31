@@ -1,0 +1,7 @@
+Django>=3.2,<4.0
+gunicorn>=20.0,<21.0
+schedule>=1.1,<2.0
+psycopg2-binary>=2.9,<3.0  # Falls du PostgreSQL verwendest
+djangorestframework>=3.12,<4.0  # Falls du DRF verwendest
+django-bower
+# Füge hier weitere Abhängigkeiten hinzu
